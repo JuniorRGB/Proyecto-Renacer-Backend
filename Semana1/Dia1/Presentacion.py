@@ -1,0 +1,13 @@
+nombre = input('como te llamas?')
+edad = input('cuantos años tienes?')
+trabajo = input('en que trabajas?')
+videojuego = input('cual es tu videojuego favorito?')
+lenguaje = input('cual es tu lenguaje de programacion favorito?')
+
+print('\n -----PRESENTACION----- \n')
+print(f"Hola, mi nombre es {nombre}")
+print(f'tengo {edad} años')
+print(f'trabajo como {trabajo}')
+print(f'mi juego favorito es {videojuego}')
+print(f'mi lenguaje de programacion favorito es {lenguaje}')
+print(f'\n-----Bienvenido a al Proyecto Renacer-Backend-----\n')
