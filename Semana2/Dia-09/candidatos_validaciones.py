@@ -1,10 +1,13 @@
 import json
+from pathlib import Path
+ruta_base = Path(__file__).parent
+ruta_json = ruta_base / "candidatos.json"
 
 
 def cargar_candidatos():
     try:
 
-        with open("candidatos.json", "r") as archivo:
+        with open(ruta_json, "r") as archivo:
 
             candidatos_cargados = json.load(archivo)
             #print(candidatos_cargados)
@@ -101,7 +104,7 @@ def agregar_candidato(candidatos):
 
 def guardar_candidatos(candidatos):
 
-    with open("candidatos.json", "w") as archivo:
+    with open(ruta_json, "w") as archivo:
 
         json.dump(candidatos, archivo)
 
